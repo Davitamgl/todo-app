@@ -1,6 +1,6 @@
 h1 {
   color: white;
-  margin: 0 0;
+  margin: 4px 0;
   text-shadow: 2px 2px 1px #2b2a28;
 }
 
@@ -32,8 +32,8 @@ h1 {
     align-items: center;
     background-color: rgb(232, 234, 237);
     border-radius: 12px;
-    padding: 16px 0;
-    margin: auto;
+    padding: 15px 0;
+    margin-bottom: 1vh;
 
     .todo-container {
       flex: 1;
@@ -41,6 +41,11 @@ h1 {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 90vw;
+      height: 85vh;
     }
   }
 }
