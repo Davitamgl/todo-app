@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import mainReducer from "./Slice";
+import todoReducer from './todoSlice'
 
 export default configureStore({
   reducer: {
-    slice: mainReducer,
+    todo: todoReducer
   },
   devTools: !process.env.NODE_ENV || process.env.NODE_ENV === "development",
 });
