@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import Input from "./components/input/input";
 import ToDoItem from "./components/todo-item/todoItem";
+
 import { useSelector } from "react-redux";
 import { selectTodoList } from "./redux/todoSlice";
 

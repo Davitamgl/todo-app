@@ -1,7 +1,8 @@
 import React from "react";
 import "./todoItem.styles.scss";
 
-import Checkbox from "@material-ui/core/Checkbox";
+import Checkbox  from "@material-ui/core/Checkbox";
+
 
 import { useDispatch } from "react-redux";
 import { setCheck } from "../../redux/todoSlice";
@@ -21,6 +22,7 @@ const ToDoItem = ({ name, done, id }) => {
         inputProps={{ "aria-label": "secondary checkbox" }}
       />
       <p className={done ? "checked" : null}>{name}</p>
+      
     </div>
   );
 };
